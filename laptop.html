@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laptops</title>
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-laptop"></i> Laptops </h1>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i> Shop</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <img src="images/heroimage.jpg" alt="Banner Image">
+            <div class="overlay-text">
+                <p>Discover the latest newly launched Laptops</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="images/laptop1.jpg" alt="Product 1">
+                    <h3>Laptop 1</h3>
+                    <p>$19.99</p>
+                </div>
+                <div class="product">
+                    <img src="images/laptop2.jpg" alt="Product 2">
+                    <h3>Laptop 2</h3>
+                    <p>$24.99</p>
+                </div>
+                <div class="product">
+                    <img src="images/laptop2.jpg" alt="Product 3">
+                    <h3>Laptop 3</h3>
+                    <p>$54.99</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Laptop store</p>
+        </div>
+    </footer>
+
+      <script src="script.js">
+        window.addEventListener('load', () => {
+            registerSW();
+          });
+       
+          // Register the Service Worker
+          async function registerSW() {
+            if ('service' in navigator) {
+              try {
+                await navigator
+                      .serviceWorker
+                      .register('service.js');
+              }
+              catch (e) {
+                console.log('SW registration failed');
+              }
+            }
+          }
+    </script>
+    
+</body>
+</html>

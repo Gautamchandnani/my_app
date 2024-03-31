@@ -1,0 +1,30 @@
+{
+    "name": "Laptop",
+    "short_name": "Laptops",
+    "start_url": "laptop.html",
+    "scope": "./",
+    "icons": [
+        {
+            "src": "images/heroimage.jpg",
+            "type": "image/jpg"
+        },
+        {
+            "src": "images/laptop1.jpg",
+            "sizes": "512x512",
+            "type": "images/jpg"
+        },
+        {
+            "src": "images/laptop2.jpg",
+            "sizes": "512x512",
+            "type": "images/jpg"
+        },
+        {
+            "src": "images/laptop3.jpg",
+            "sizes": "512x512",
+            "type": "images/jpg"
+        }
+    ],
+    "theme_color": "#f1c3e4",
+    "background_color": "#f8f8f8",
+    "display": "standalone"
+}
